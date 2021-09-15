@@ -15,7 +15,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - Open http://localhost:4200/ in browser
 - Enjoy!
 
-#App infos 
+# App infos 
 
 5 first generations of pokemons are listed.
 if you click on 'infos', modal pops up letting you check type(s) and the evolution chain of current Pokemon!
