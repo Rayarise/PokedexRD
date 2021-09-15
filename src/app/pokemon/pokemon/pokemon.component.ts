@@ -10,8 +10,7 @@ import { PokemonCardComponent } from 'src/app/pokemon-card/pokemon-card.componen
 export class PokemonComponent implements OnInit {
 
   currentPokemon: Pokemon = new Pokemon
-  name: any;
-  sprite:any;
+  
 
   @ViewChild("pokemoncardmodal") pokemonCardModal!: PokemonCardComponent;
   @Output() showPokemonCard = new EventEmitter();
@@ -25,8 +24,7 @@ export class PokemonComponent implements OnInit {
   }
 
   getName(pokemon: any){
-    this.name = pokemon.name
-    this.sprite = pokemon.sprite
+    
     this.currentPokemon.name = pokemon.name
     this.currentPokemon.sprite = pokemon.sprite
     this.currentPokemon.type1 = pokemon.type[0]
@@ -41,6 +39,6 @@ export class PokemonComponent implements OnInit {
 
   openModal(){
     this.pokemonCardModal.open(this.currentPokemon)
-    console.log(this.currentPokemon.name)
+    
   }
 }

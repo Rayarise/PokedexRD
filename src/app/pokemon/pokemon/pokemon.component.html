@@ -2,9 +2,9 @@
 {{getName(pokemon)}}
 <div class="col-sm-6">
 <div class="card" style="width:18rem;margin-left: 10%;margin-right: 80%;" >
-    <img class="card-img-top" src={{sprite}} alt="Card image cap">
+    <img class="card-img-top" src={{pokemon.sprite}} alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title">{{name}}</h5>
+      <h5 class="card-title">{{pokemon.name}}</h5>
         <button type="button" class="btn btn-primary" (click)="openModal()">Infos</button>
     </div>
   </div>

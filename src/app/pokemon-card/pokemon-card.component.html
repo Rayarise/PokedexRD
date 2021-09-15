@@ -26,7 +26,7 @@
          <hr>
         
           <div class="input-group">
-            <h4 style="text-align:center">Type:     {{currentPokemon.type1}}  {{currentPokemon.type2}}</h4>
+            <h4 style="text-align:center">Type:     {{currentPokemon.type1}} </h4><h4 *ngIf="currentPokemon.type2 != currentPokemon.type1">{{currentPokemon.type2}}</h4>
             <div class="input-group-append">
              
             </div>
@@ -43,7 +43,9 @@
           <div class="input-group" >
             <h4 >Evolution Chain: <br>
             
-              {{evolutionsName}} </h4>
+              <button type="button" class="btn btn-secondary" (click)="showEvolution1()">{{evolutions1}}</button> 
+              <button  type="button" *ngIf="evolutions2" class="btn btn-secondary"(click)="showEvolution2()">{{evolutions2}}</button>
+              <button type="button" *ngIf="evolutions3" class="btn btn-secondary"(click)="showEvolution3()">{{evolutions3}}</button></h4>
             
           </div>
         </div>
