@@ -1,5 +1,5 @@
 # PokedexRD
-Devellopped using Debian 9.
+Developed using Debian 9.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.5.
 
 # To build and start application:
